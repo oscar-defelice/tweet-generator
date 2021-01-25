@@ -30,7 +30,7 @@ install-dev-socle: ## install the package for developement
 
 install-dev-collector: ## install the package for developement
 	make clean
-	pip install -r requirements/requirements_collector.txt
+	pip3 install -r requirements/requirements_collector.txt
 
 
 install-dev: ## install the package for developement
@@ -40,13 +40,13 @@ install-dev: ## install the package for developement
 
 install: ## install the package to the active Python's site-packages
 	make clean
-	pip install -r requirements/requirements_runtime.txt
-	pip install -r requirements/requirements_test.txt
+	pip3 install -r requirements/requirements_runtime.txt
+	pip3 install -r requirements/requirements_test.txt
 
 
 setup-env: ## setup environment variable
 	. tweegen/setup/env.sh
-	python setup.py install
+	python3 setup.py install
 
 
 download-model: ## download model repository for finetuning
@@ -63,13 +63,13 @@ init: ## setup the dev enviroment
 	@echo "Initialisation finished"
 
 download:
-	python tweegen/core/twitter.py download $(call args,BernieSanders)
+	python3 tweegen/core/twitter.py download $(call args,BernieSanders)
 
 train:
-	python tweegen/core/model.py train $(call args,BernieSanders)
+	python3 tweegen/core/model.py train $(call args,BernieSanders)
 
 generate:
-	python tweegen/core/model.py generate $(call args,BernieSanders)
+	python3 tweegen/core/model.py generate $(call args,BernieSanders)
 
 
 docker-build:  ## [DEV  ] build docker image without downloading the model

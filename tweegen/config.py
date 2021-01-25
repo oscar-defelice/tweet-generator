@@ -1,6 +1,6 @@
 import os
 
-PROJECT_NAME = "tweet-gen"
+PROJECT_NAME = "tweegen"
 VERSION = "0.1"
 PORT = int(os.getenv("PORT"))
 LOG_LEVEL = os.getenv("LOG_LEVEL")

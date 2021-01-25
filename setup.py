@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name="tweet-generator",
+    name="tweegen",
     version="0.1",
-    packages=["tweet-generator"],
+    packages=["tweegen"],
     url="",
     license="",
     author="Oscar DE FELICE",
