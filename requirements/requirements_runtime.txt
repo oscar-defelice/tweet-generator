@@ -1,0 +1,7 @@
+-r ./requirements_socle.txt
+-r ./requirements_collector.txt
+
+fastapi==0.58.1
+uvicorn==0.11.5
+loguru==0.5.1
+fire==0.3.1

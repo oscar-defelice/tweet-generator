@@ -1,0 +1,6 @@
+.git/
+.gitignore
+.vscode
+data/
+models/
+notebooks/
