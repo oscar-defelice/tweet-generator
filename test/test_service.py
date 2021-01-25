@@ -1,5 +1,5 @@
 from tweegen.service import load_model, _split, generate, upload
-from transformers import pipeline
+from transformers import pipelines
 
 def test_load_model():
     assert type(load_model()) == pipelines.text_generation.TextGenerationPipeline
