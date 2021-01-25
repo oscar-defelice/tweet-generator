@@ -1,5 +1,6 @@
 import fire
 from pathlib import Path
+from transformers import pipeline
 from transformers import AutoTokenizer
 from transformers import Trainer, TrainingArguments, AutoModelWithLMHead
 from transformers import TextDataset, DataCollatorForLanguageModeling
