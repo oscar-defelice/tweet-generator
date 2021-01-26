@@ -131,3 +131,6 @@ dmypy.json
 # Data
 data/
 models/
+
+# OS files
+.DS_Store
