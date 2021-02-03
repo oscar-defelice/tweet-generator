@@ -6,8 +6,6 @@ EXPOSE 80
 
 WORKDIR /var/task
 
-RUN apt-get update -y
-
 COPY requirements/ .
 
 RUN pip install --upgrade pip &&\
